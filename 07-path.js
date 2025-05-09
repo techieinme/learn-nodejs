@@ -14,29 +14,51 @@ const filePath = '/users/project/index.html';
 // console.log(path.relative('/users/project', '/users/project/index.html')); // returns the relative path from one path to another
 
 
-console.log('Base name:', path.basename(filePath));
-console.log('Directory:', path.dirname(filePath));
-console.log('Extension:', path.extname(filePath));
+// console.log('Base name:', path.basename(filePath));
+// console.log('Directory:', path.dirname(filePath));
+// console.log('Extension:', path.extname(filePath));
 
-const joined = path.join('/users', 'project', 'assets', 'img.png');
-console.log('Joined Path:', joined);
+// const joined = path.join('/users', 'project', 'assets', 'img.png');
+// console.log('Joined Path:', joined);
 
-const resolved = path.resolve('src', 'index.js');
-console.log('Resolved Path:', resolved);
+// const resolved = path.resolve('src', 'index.js');
+// console.log('Resolved Path:', resolved);
 
-const parsed = path.parse(filePath);
-console.log('Parsed Path:', parsed);
+// const parsed = path.parse(filePath);
+// console.log('Parsed Path:', parsed);
 
-const formatted = path.format({
-  dir: '/users/project',
-  name: 'index',
-  ext: '.js'
-});
-console.log('Formatted Path:', formatted);
+// const formatted = path.format({
+//   dir: '/users/project',
+//   name: 'index',
+//   ext: '.js'
+// });
+// console.log('Formatted Path:', formatted);
 
-console.log('Is Absolute?', path.isAbsolute('/foo'));
-console.log('Relative Path:', path.relative('/users/docs', '/users/docs/file.txt'));
+// console.log('Is Absolute?', path.isAbsolute('/foo'));
+// console.log('Relative Path:', path.relative('/users/docs', '/users/docs/file.txt'));
 
-console.log(path.normalize('///users//project/index.html')); // normalizes a path, resolving '..' and '.' segments
+// console.log(path.normalize('///users//project/index.html')); // normalizes a path, resolving '..' and '.' segments
 
-  
+
+
+
+console.log(path.sep);
+
+const joinedPath = path.join('/src/content', 'subfolder', 'text.txt');
+console.log('Joined Path:', joinedPath);
+const baseName = path.basename(joinedPath);
+console.log('Base Name:', baseName);
+const dirName = path.dirname(joinedPath);
+console.log('Directory Name:', dirName);
+const extName = path.extname(joinedPath);
+console.log('Extension Name:', extName);
+const parsedPath = path.parse(joinedPath);
+console.log('Parsed Path:', parsedPath);
+const resolvedPath = path.resolve('src', 'content', 'subfolder', 'text.txt');
+console.log('Resolved Path:', resolvedPath);
+const isAbsolutePath = path.isAbsolute(joinedPath);
+console.log('Is Absolute Path:', isAbsolutePath);
+const relativePath = path.relative('/src/content', '/src/content/subfolder/text.txt');
+console.log('Relative Path:', relativePath);
+const normalizedPath = path.normalize('/src//content/subfolder/../text.txt');
+console.log('Normalized Path:', normalizedPath);    
