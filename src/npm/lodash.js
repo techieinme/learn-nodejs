@@ -1,0 +1,8 @@
+// npm 
+const _ = require('lodash');
+
+const number = [1,[2,[3,4]]];
+
+const newNumbers  = _.flattenDeep(number);
+
+console.log(newNumbers);

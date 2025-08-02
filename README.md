@@ -113,3 +113,80 @@ A structured list of topics to learn Node.js effectively.
 - [ ] Hosting on Platforms (Heroku, Render, Vercel, VPS)
 - [ ] Reverse Proxy with Nginx
 - [ ] Dockerizing a Node.js App
+
+
+
+# 📦 npm Command Reference
+
+A quick reference guide for common npm commands used in JavaScript and Node.js development.
+
+---
+
+## 🔧 Basic Setup
+
+| Command                        | Description                                      |
+|-------------------------------|--------------------------------------------------|
+| `npm init`                    | Create a `package.json` file interactively       |
+| `npm init -y`                 | Generate `package.json` with default values      |
+| `npm install` / `npm i`       | Install all project dependencies                 |
+| `npm install <package>`       | Install a package and add to dependencies        |
+| `npm uninstall <package>`     | Remove a package from `node_modules` and `package.json` |
+
+---
+
+## 📦 Package Management
+
+| Command                                 | Description                                      |
+|----------------------------------------|--------------------------------------------------|
+| `npm install --save`                   | Add to `dependencies` (default for prod)         |
+| `npm install --save-dev`               | Add to `devDependencies`                         |
+| `npm install -g <package>`             | Install a package globally                       |
+| `npm update`                           | Update all installed packages                    |
+| `npm outdated`                         | Check for outdated packages                      |
+
+---
+
+## 🚀 Script Execution
+
+| Command                | Description                        |
+|------------------------|------------------------------------|
+| `npm run <script>`     | Run a custom script from `package.json` |
+| `npm start`            | Run the `start` script              |
+| `npm test`             | Run the `test` script               |
+| `npm run build`        | Run the `build` script              |
+
+---
+
+## 🧪 Testing & Auditing
+
+| Command              | Description                              |
+|----------------------|------------------------------------------|
+| `npm audit`          | Scan for security vulnerabilities         |
+| `npm audit fix`      | Automatically fix minor vulnerabilities   |
+| `npm test`           | Run test scripts                          |
+
+---
+
+## 📂 Listing & Info
+
+| Command               | Description                             |
+|-----------------------|-----------------------------------------|
+| `npm list`            | List local packages                     |
+| `npm list -g`         | List global packages                    |
+| `npm view <package>`  | Show details about a package            |
+
+---
+
+## 🧹 Maintenance
+
+| Command                       | Description                         |
+|-------------------------------|-------------------------------------|
+| `npm prune`                   | Remove unused packages              |
+| `npm cache clean --force`     | Force-clear npm cache               |
+
+---
+
+## 🔗 Helpful Links
+
+- [npm Docs](https://docs.npmjs.com/)
+- [npm Packages](https://www.npmjs.com/)
